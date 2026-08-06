@@ -447,4 +447,26 @@ transform:translateY(0);
     border-radius: 20px;
     display: block;
     margin: 20px auto;
+
+    animation: photoGlow 4s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(73, 214, 210, 0.35);
+}
+
+@keyframes photoGlow {
+
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(73, 214, 210, 0.35);
+    }
+
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 35px rgba(255, 105, 180, 0.45);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(73, 214, 210, 0.35);
+    }
+
 }

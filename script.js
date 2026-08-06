@@ -1,1 +1,3 @@
-console.log("Melisim için hazırlandı 🤍");
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = "1";
+});

@@ -470,3 +470,15 @@ transform:translateY(0);
     }
 
 }
+
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.photo-gallery .love-photo {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}

@@ -76,3 +76,24 @@ function createHeart(){
 }
 
 setInterval(createHeart,500);
+
+/* ❤️ Sürpriz Butonu ❤️ */
+
+const surpriseButton = document.getElementById("surpriseButton");
+const hiddenMessage = document.getElementById("hiddenMessage");
+
+if(surpriseButton && hiddenMessage){
+
+    surpriseButton.addEventListener("click",()=>{
+
+        hiddenMessage.classList.toggle("show");
+
+        if(hiddenMessage.classList.contains("show")){
+            surpriseButton.innerHTML="❤️ Seni Çok Seviyorum ❤️";
+        }else{
+            surpriseButton.innerHTML="🤍 Bana Dokun 🤍";
+        }
+
+    });
+
+}

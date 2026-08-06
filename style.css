@@ -439,3 +439,12 @@ transition:all .8s ease;
 opacity:1;
 transform:translateY(0);
 }
+
+.love-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+}

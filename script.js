@@ -46,3 +46,33 @@ function updateLoveCounter(){
 setInterval(updateLoveCounter,1000);
 
 updateLoveCounter();
+
+/* ❤️ Uçuşan Kalpler ❤️ */
+
+function createHeart(){
+
+    const container = document.getElementById("hearts");
+
+    if(!container) return;
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+
+    heart.innerHTML = ["❤️","🤍","💖","💕","💗"][Math.floor(Math.random()*5)];
+
+    heart.style.left = Math.random()*100 + "%";
+
+    heart.style.fontSize = (18 + Math.random()*24) + "px";
+
+    heart.style.animationDuration = (6 + Math.random()*6) + "s";
+
+    container.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },12000);
+
+}
+
+setInterval(createHeart,500);
